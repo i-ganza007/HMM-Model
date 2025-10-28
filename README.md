@@ -248,43 +248,17 @@ predicted_activity, pred_sequence, confidence = predict_activity(
 
 ## Repository Structure
 ```
-HMM-Activity-Model/
-├── data/                   # Raw and processed sensor data
-├── notebooks/              # Jupyter notebooks with full implementation
-├── src/
-│   ├── preprocessing.py    # Data combination and harmonization
-│   ├── feature_extraction.py # Sliding window and feature computation
-│   ├── hmm_model.py        # HMM training and evaluation
-│   └── visualization.py    # Plotting and results display
-├── models/                 # Saved trained models
-├── results/                # Evaluation metrics and confusion matrices
-├── tests/                  # Test data for validation
-├── requirements.txt        # Python dependencies
-├── README.md               # Project documentation
-└── report.pdf              # Final comprehensive report
+HMM-Model/
+├── jumping/
+├── standing/
+├── still/
+├── walking/
+├── preprocessed_data...
+├── ...
+├── HMMODEL.ipynb/
+├── HMMWalkingTest.ipynb/
+└── README.md
 ```
 
 ---
 
-## Submission Checklist
-
-- [ ] Well-labeled dataset files (`.csv`) with consistent formatting
-- [ ] Complete Python implementation (`.ipynb` or `.py` files)
-- [ ] Trained HMM model with saved parameters
-- [ ] Comprehensive evaluation results and visualizations
-- [ ] Test predictions on unseen data with confidence scores
-- [ ] 4-5 page report including:
-  - Background & motivation
-  - Data collection and preprocessing methodology
-  - HMM architecture and training procedure
-  - Results with quantitative metrics and visualizations
-  - Discussion of limitations and future work
-  - Conclusion and practical implications
-
----
-
-## References
-
-1. Rabiner, L. R. (1989). A tutorial on hidden Markov models and selected applications in speech recognition.
-2. Mannini, A., & Sabatini, A. M. (2010). Machine learning methods for classifying human physical activity from on-body accelerometers.
-3. hmmlearn documentation: https://hmmlearn.readthedocs.io
